@@ -9,26 +9,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 html {
+  background: #222;
+  color: #DDD;
   padding: 20px;
 }
 
-.photo {
-  /*
-    Background image is CC0; origin author:
-    https://www.flickr.com/photos/redcctshirt/4746063617/in/photolist-8eoPn4-JFmUGE-JPGEit-KtCoQ5-JefDhN-q3dop7-K1xJyU-pV886d-Lgfeb1-FAqwCm-gBoPfF-Hz6RnA-GhsN9C-FAKF5Y-cCLymu-K7jyk1-BzNaHM-sjDvnJ-gQgWFu-pZEkZ2-xihBWs-gCsqDq-HNa1E8-B1S2wb-WoRf67-FuDWGH-8JLUTk-xCGHja-xktJg5-TYcVJi-sH7D5C-bBs8mZ-JeP3pA-JmfoMw-8eoPmP-GVonjf-9ygPRJ-9ygPQW-gQgNeE-JeQraT-HmWNVM-8eoRDi-FvavQ1-Fva8n5-Hz6CNY-zd4Wzo-Hz5jMi-Jvcet6-JiBLRf-HNbMHf
-  */
-  background-image: url('cement-tint-1x.jpg'); /* 96dpi screens */
-  background-size: 1136px 856px;
-  padding: 30px;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .photo {
-    background-image: url('cement-tint.jpg'); /* 192dpi screens */
-  }
+figcaption {
+  padding: 10px 0px 10px 0px;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+@media screen and (min-width: 710px) {
+  .photo {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+  }
+  img {
+    grid-column: 1 / 3;
+  }
 }

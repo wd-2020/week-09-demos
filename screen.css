@@ -1,0 +1,34 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+html {
+  padding: 20px;
+}
+
+.photo {
+  /*
+    Background image is CC0; origin author:
+    https://www.flickr.com/photos/redcctshirt/4746063617/in/photolist-8eoPn4-JFmUGE-JPGEit-KtCoQ5-JefDhN-q3dop7-K1xJyU-pV886d-Lgfeb1-FAqwCm-gBoPfF-Hz6RnA-GhsN9C-FAKF5Y-cCLymu-K7jyk1-BzNaHM-sjDvnJ-gQgWFu-pZEkZ2-xihBWs-gCsqDq-HNa1E8-B1S2wb-WoRf67-FuDWGH-8JLUTk-xCGHja-xktJg5-TYcVJi-sH7D5C-bBs8mZ-JeP3pA-JmfoMw-8eoPmP-GVonjf-9ygPRJ-9ygPQW-gQgNeE-JeQraT-HmWNVM-8eoRDi-FvavQ1-Fva8n5-Hz6CNY-zd4Wzo-Hz5jMi-Jvcet6-JiBLRf-HNbMHf
+  */
+  background-image: url('cement-tint-1x.jpg'); /* 96dpi screens */
+  background-size: 1136px 856px;
+  padding: 30px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .photo {
+    background-image: url('cement-tint.jpg'); /* 192dpi screens */
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
